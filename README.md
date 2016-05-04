@@ -1,10 +1,10 @@
 # Heroku Buildpack for GitHub Authentication
 
-This is a Heroku buildpack that enables GitHub-authenticated `git` operations
+This is a Heroku buildpack that enables GitHub-authenticated operations
 within a Heroku dyno.
 
 It detects a `GITHUB_AUTH_TOKEN` environment variable and creates a `.netrc`
-file with a GitHub entry with it.
+file with a GitHub entry.
 
 ## Setup
 
