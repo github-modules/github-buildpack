@@ -1,3 +1,4 @@
 #!/bin/sh
 
+echo "github-buildpack"
 exit 0
