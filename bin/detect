@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "github-buildpack"
+echo "zeke/github-buildpack"
 exit 0
