@@ -48,3 +48,15 @@ touch some/file
 git commit -am "git commit from a dyno!"
 git push origin master
 ```
+
+## License
+
+MIT
+
+## Notes
+
+This buildpack was inspired by [@timshadel/heroku-buildpack-github-netrc](https://github.com/timshadel/heroku-buildpack-github-netrc),
+but the two differ in one significant way: the @timshadel buildpack
+allows authenticated requests to be made only at **build time** (i.e. when your app is
+being deployed), whereas this buildpack allows authenticated requests at
+ build time and/or **run time** (when your app is actually running).
