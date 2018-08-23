@@ -24,7 +24,7 @@ heroku config:set GITHUB_AUTH_TOKEN=YOUR_TOKEN_HERE
 Then configure your app to use this buildpack:
 
 ```sh
-heroku buildpacks:add --index 1 https://github.com/zeke/github-buildpack
+heroku buildpacks:add --index 1 zeke/github
 ```
 
 The next time you push your app to Heroku, this buildpack will create a
@@ -47,6 +47,13 @@ git config user.name "Zeke Sikelianos"
 touch some/file
 git commit -am "git commit from a dyno!"
 git push origin master
+```
+
+## Using the latest source code
+The `zeke/github` buildpack from the [Heroku Buildpack Registry](https://devcenter.heroku.com/articles/buildpack-registry) represents the latest stable version of the buildpack. If you'd like to use the source code from this Github repository, you can set your buildpack to the Github URL:
+
+```sh
+heroku buildpacks:add --index 1 https://github.com/github-modules/github-buildpack
 ```
 
 ## License
